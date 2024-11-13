@@ -1,0 +1,143 @@
+.money-manager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+}
+
+.highlighted-text {
+  color: #0b69ff;
+  font-weight: bold;
+}
+
+.dashboard {
+  width: 70%;
+}
+
+.profile-section {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/money-manager/money-manager-bg.png');
+  background-size: cover;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.transaction-types {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0px;
+}
+
+.trasaction-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-transaction {
+  border: 1px solid #cbd5e1;
+  border-radius: 18px;
+  padding: 30px 40px;
+  width: 38%;
+}
+
+.transaction-histoy-heading {
+  font-size: 19px;
+  font-weight: 500;
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 15px 0px;
+}
+
+.label-text {
+  font-size: 13px;
+  color: #7e858e;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.input-area {
+  border: 1px solid #cbd5e1;
+  width: 100%;
+  height: 30px;
+  outline: none;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+
+.add-transaction-btn {
+  background-color: #0b69ff;
+  color: #fff;
+  border: 0px;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.history {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border: 1px solid #cbd5e1;
+  border-radius: 18px;
+  padding: 10px 20px;
+  width: 58%;
+}
+
+.history-table {
+  width: 100%;
+}
+
+.head {
+  padding-left: 10px;
+}
+
+.table-content {
+  display: flex;
+  width: 100%;
+  border: 1px solid #cbd5e1;
+  justify-content: flex-start;
+}
+
+.transactions {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+.column {
+  margin-right: 40px;
+}
+
+@media all and (max-width: 767px) {
+  .money-manager {
+    height: auto;
+  }
+  .transaction-types {
+    display: flex;
+    flex-direction: column;
+  }
+  .trasaction-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .add-transaction {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+  .history {
+    width: 100%;
+    padding: 20px;
+  }
+  .dashboard {
+    padding: 30px;
+    width: 100%;
+  }
+}
